@@ -153,9 +153,11 @@ public class Login extends javax.swing.JFrame {
                    MainMenu info=new MainMenu();
                    MainMenu.main(null);
                    dispose();
-                   System.out.println("admin login");
+                   
                }else{
-                   System.out.println("user login");
+                   UserMenu info=new UserMenu();
+                   UserMenu.main(null);
+                   dispose();
                }
            }else{
                JOptionPane.showMessageDialog(null, "Incorrect username or password!");
